@@ -26,6 +26,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
 gem 'spring',        group: :development
 
+gem 'bootstrap-sass', '~> 3.1.1'
+gem "font-awesome-rails"
+
 group :development, :test do
   gem 'pry-rails'
   gem 'factory_girl_rails'

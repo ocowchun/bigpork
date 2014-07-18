@@ -1,0 +1,23 @@
+{
+  "name": "bigpork",
+  "version": "0.0.0",
+  "homepage": "https://github.com/ocowchun/bigpork",
+  "authors": [
+    "ocowchun <ocowchun@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "wookmark-jquery": "~1.4.8",
+    "nprogress": "~0.1.6",
+    "lightbox2": "~2.7.1",
+    "imagesloaded": "~3.1.8"
+  }
+}

@@ -1,1 +1,95 @@
-<h2>Big Pork</h2>
+
+
+<div id="container">
+  <div class="container-fluid">
+    <div class="row">
+
+      <div class="drawer">
+        <div class="dropmenu">
+          <div id="select_school" class="container-fluid">
+            <div class="row">
+              <div class="col-sm-offset-1 col-sm-2">
+                <ul class="nav nav-stacked">
+
+                  <%@school_list[0..3].each do|school|%>
+                  <li   >
+                   <%= link_to school[:title], "##{school[:name]}" %>
+                 </li>
+                 <%end%>
+               </ul>                    
+             </div>
+             <div class="col-sm-2">
+              <ul class="nav nav-stacked">
+
+                <%@school_list[4..7].each do|school|%>
+                <li   >
+                 <%= link_to school[:title], "##{school[:name]}" %>
+               </li>
+               <%end%>
+             </ul>                    
+           </div>
+           <div class="col-sm-2">
+              <ul class="nav nav-stacked">
+
+                <%@school_list[8..11].each do|school|%>
+                <li   >
+                 <%= link_to school[:title], "##{school[:name]}" %>
+               </li>
+               <%end%>
+             </ul>                    
+         </div>
+         <div class="col-sm-2">
+            <ul class="nav nav-stacked">
+
+              <%@school_list[12..15].each do|school|%>
+              <li   >
+               <%= link_to school[:title], "##{school[:name]}" %>
+             </li>
+             <%end%>
+           </ul>                         
+       </div>
+       <div class="col-sm-2">
+           <ul class="nav nav-stacked">
+
+            <%@school_list[16..19].each do|school|%>
+            <li>
+             <%= link_to school[:title], "##{school[:name]}" %>
+           </li>
+           <%end%>
+         </ul>                     
+       </div>
+     </div>
+    </div>
+    </div>
+  </div>
+
+<div id="main" role="main">
+  <ul id="tiles">
+    <!-- These is where we place content loaded from the Wookmark API -->
+  </ul>
+
+  <div id="loader">
+    <div id="loaderCircle"></div>
+  </div>
+
+</div>              
+
+
+
+
+
+
+<footer>
+
+</footer>
+</div>   
+
+
+
+<!-- include jQuery -->
+
+<!-- Include the imagesLoaded plug-in -->
+
+<!-- Include the plug-in -->
+<!-- Once the page is loaded, initalize the plug-in. -->
+<%= javascript_include_tag 'pages/welcome_index', 'data-turbolinks-track' => true %>

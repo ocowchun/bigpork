@@ -1,0 +1,159 @@
+/*
+ *= require woomark_main
+ *= require woomark_reset
+ */
+@import url(http://fonts.googleapis.com/css?family=Fugaz+One|Muli);
+ 
+.title{
+  font-family: 'Fugaz One', cursive;
+}
+.facebook-like{
+  padding-top:40px;
+  padding-bottom:10px;
+}
+
+.navigator{
+  li{
+    font-family: 'Muli', sans-serif;
+    display: inline-block;
+    // margin-right: 30px;
+    margin-bottom: 50px;
+  }
+  list-style: none;
+  position:relative;
+  top:40px;
+  z-index: 5;
+}
+
+.menu-section{
+  height:200px;
+  width:100%;
+  padding-top:10px;
+  background:white;
+  position: fixed;
+  z-index: 2;
+}
+// .menu-pos{
+//   position:relative;
+//   left:6%;
+//   top:-30px;
+// }
+.menu-btn{
+  a{
+    position:relative;
+    top:40px;
+    display: block;
+    height:30px;
+    width:30px;
+  }
+}
+
+.menu span:after,
+.menu span:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -9px;
+}
+.menu span:after{
+  top: 9px;
+}
+.menu span {
+  position: relative;
+  display: block;
+  top:15px;
+}
+
+.menu span,
+.menu span:after,
+.menu span:before {
+  width: 30px;
+  height: 5px;
+  background-color: #888;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+.menu.pink span,
+.menu.pink span:after,
+.menu.pink span:before {
+  width: 30px;
+  height: 5px;
+  background-color: #ef8181;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+
+
+
+
+.drawer {
+  position:fixed;
+  width:100%;
+  z-index: 1;
+  .dropmenu{
+    visibility: hidden;
+    transition: visibility 0.20s ease-in;          
+    background:scale-color(#ef8181, $lightness:95%);
+    .nav{
+      a:visited,a{
+        color:scale-color(#ef8181, $lightness:30%);
+      }
+      a:hover{
+        color:#222;
+        background:white;
+      }
+    }
+  }
+  -webkit-transform: translate3d(0, -410px, 0);
+  -moz-transform: translate3d(0, -410px, 0);
+  -o-transform: translate3d(0, -410px, 0);
+  transform: translate3d(0, -410px, 0);
+  -webkit-transition:-webkit-transform 0.25s ease-out;
+  -moz-transition:-moz-transform 0.25s ease-out;
+  -o-transition:-o-transform 0.25s ease-out;
+  transition:transform 0.25s ease-out;
+}
+
+
+.drawer.active {
+  .dropmenu{
+  // margin-bottom:200px;
+  visibility: visible;      
+  }  
+  -webkit-transform: translate3d(0,195px,0);
+  -moz-transform: translate3d(0,195px,0);
+  -o-transform: translate3d(0,195px,0);
+  transform: translate3d(0,195px,0);
+}
+
+
+
+
+///////content////////
+#main{
+  padding-top: 200px;
+}
+
+.fa-like,.fa-fb {
+  font-size: 18px;
+  margin:auto 30px;
+}
+.fa-like{
+  color:scale-color(gray, $lightness:40%);
+  &:hover{
+     color:#ef8181;
+     transition: color 0.1s ease-in;
+  }
+ 
+}
+
+.fa-fb{
+  color:scale-color(gray, $lightness:40%);
+  &:hover{
+    color:#2d86c9;
+    transition: color 0.1s ease-in;
+  }
+}
