@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140718151744) do
+ActiveRecord::Schema.define(version: 20140718154243) do
 
   create_table "items", force: true do |t|
     t.string   "name"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(version: 20140718151744) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.string   "link"
   end
 
   add_index "items", ["shop_id"], name: "index_items_on_shop_id"
@@ -30,6 +31,7 @@ ActiveRecord::Schema.define(version: 20140718151744) do
     t.string   "name"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "link"
   end
 
 end
