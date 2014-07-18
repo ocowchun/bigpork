@@ -28,6 +28,7 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-sass', '~> 3.1.1'
 gem "font-awesome-rails"
+gem "paperclip", "~> 4.1"
 
 group :development, :test do
   gem 'pry-rails'
