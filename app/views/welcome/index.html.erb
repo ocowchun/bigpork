@@ -11,7 +11,7 @@
               <div class="col-sm-offset-1 col-sm-2">
                 <ul class="nav nav-stacked">
 
-                  <%@school_list[0..8].each do|school|%>
+                  <%@school_list[0..3].each do|school|%>
                   <li   >
                    <%= link_to school[:title], "##{school[:name]}" %>
                  </li>
@@ -21,7 +21,7 @@
              <div class="col-sm-2">
               <ul class="nav nav-stacked">
 
-                <%@school_list[9..17].each do|school|%>
+                <%@school_list[4..7].each do|school|%>
                 <li   >
                  <%= link_to school[:title], "##{school[:name]}" %>
                </li>
@@ -31,7 +31,7 @@
            <div class="col-sm-2">
               <ul class="nav nav-stacked">
 
-                <%@school_list[18..26].each do|school|%>
+                <%@school_list[8..11].each do|school|%>
                 <li   >
                  <%= link_to school[:title], "##{school[:name]}" %>
                </li>
@@ -41,7 +41,7 @@
          <div class="col-sm-2">
             <ul class="nav nav-stacked">
 
-              <%@school_list[27..35].each do|school|%>
+              <%@school_list[12..15].each do|school|%>
               <li   >
                <%= link_to school[:title], "##{school[:name]}" %>
              </li>
@@ -51,7 +51,7 @@
        <div class="col-sm-2">
            <ul class="nav nav-stacked">
 
-            <%@school_list[36..44].each do|school|%>
+            <%@school_list[16..19].each do|school|%>
             <li>
              <%= link_to school[:title], "##{school[:name]}" %>
            </li>
