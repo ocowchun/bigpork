@@ -13,4 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
-//= require_tree .
+//= require wookmark-jquery
+//= require nprogress
+//= require lightbox2
+//= require imagesloaded/imagesloaded.pkgd
+//= require bootstrap/alert
